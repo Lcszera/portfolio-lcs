@@ -5,33 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucas Menezes Silva | Desenvolvedor Java &amp; Spring Boot</title>
   <meta name="description" content="Portfólio de Lucas Menezes Silva, desenvolvedor Java / Spring Boot. Confira projetos como AB Barbearia System e MF Manutenções." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <div class="noise" aria-hidden="true"></div>
 
   <header class="header" id="top">
     <div class="container header__inner">
       <a href="#top" class="logo">LMS<span>.</span></a>
       <nav class="nav">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#skills">Skills</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre"><span class="nav__index">01.</span> Sobre</a>
+        <a href="#projetos"><span class="nav__index">02.</span> Projetos</a>
+        <a href="#skills"><span class="nav__index">03.</span> Skills</a>
+        <a href="#contato"><span class="nav__index">04.</span> Contato</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">🌙</button>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__inner">
-        <p class="hero__eyebrow">Olá, eu sou</p>
-        <h1 class="hero__title">Lucas Menezes Silva</h1>
-        <p class="hero__subtitle">Desenvolvedor Java / Spring Boot</p>
+        <p class="hero__eyebrow">&lt; olá, eu sou /&gt;</p>
+        <h1 class="hero__title">Lucas Menezes<br />Silva</h1>
+        <p class="hero__subtitle">Desenvolvedor <span class="accent">Java</span> / Spring Boot</p>
         <p class="hero__text">
           Construo sistemas web completos com Java, Spring Boot e PostgreSQL —
           do cadastro de clientes ao painel administrativo, do agendamento à cobrança.
-          Abaixo estão dois sistemas reais que desenvolvi do zero.
+          Passa o cursor pelos projetos abaixo e vê os detalhes.
         </p>
         <div class="hero__cta">
           <a href="#projetos" class="btn btn--primary">Ver projetos</a>
@@ -57,66 +62,120 @@
     <section id="projetos" class="section section--alt">
       <div class="container">
         <h2 class="section__title"><span>02.</span> Projetos em destaque</h2>
+        <p class="section__hint">passe o cursor (ou toque) em cada card para expandir</p>
 
         <div class="projects">
-          <article class="project-card">
-            <div class="project-card__header">
-              <h3>AB Barbearia System</h3>
-              <span class="badge">Em desenvolvimento</span>
+
+          <article class="project-card" tabindex="0">
+            <div class="project-card__cover">
+              <img src="images/ab-barbearia-cover.jpeg" alt="Identidade visual do AB Barbearia System" loading="lazy" />
             </div>
-            <p class="project-card__desc">
-              Sistema web completo para gestão de uma barbearia. Permite que clientes
-              façam cadastro, login e agendamento online dos serviços, enquanto o
-              administrador controla funcionários, planos mensais, serviços oferecidos,
-              financeiro, galeria de fotos e equipe — tudo em um painel administrativo
-              dedicado, com recuperação de senha e autenticação segura.
-            </p>
-            <ul class="project-card__tags">
-              <li>Java 21</li>
-              <li>Spring Boot</li>
-              <li>Spring Security</li>
-              <li>Spring Data JPA</li>
-              <li>Thymeleaf</li>
-              <li>PostgreSQL</li>
-              <li>Hibernate</li>
-            </ul>
-            <div class="project-card__links">
-              <a href="https://github.com/Lcszera/ab-barbearia-system" target="_blank" rel="noopener noreferrer">
-                Ver repositório →
-              </a>
+            <div class="project-card__main">
+              <div class="project-card__header">
+                <h3>AB Barbearia System</h3>
+                <span class="badge badge--done">Concluído</span>
+              </div>
+              <p class="project-card__desc">
+                Sistema web completo para gestão de uma barbearia: agendamento online,
+                cadastro de clientes e painel administrativo.
+              </p>
+              <ul class="project-card__tags">
+                <li>Java 21</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="project-card__details">
+              <div class="project-card__details-inner">
+                <p class="project-card__desc project-card__desc--full">
+                  Clientes se cadastram, fazem login e agendam serviços online. O
+                  administrador controla funcionários, planos mensais, serviços
+                  oferecidos, financeiro, galeria de fotos e equipe — tudo em um
+                  painel dedicado, com recuperação de senha e autenticação segura.
+                </p>
+                <ul class="project-card__features">
+                  <li>Cadastro de clientes</li>
+                  <li>Login e autenticação</li>
+                  <li>Agendamento online</li>
+                  <li>Gerenciamento de funcionários</li>
+                  <li>Planos mensais</li>
+                  <li>Controle de serviços</li>
+                  <li>Painel administrativo</li>
+                  <li>Controle financeiro</li>
+                  <li>Galeria e equipe</li>
+                  <li>Recuperação de senha</li>
+                </ul>
+                <ul class="project-card__tags project-card__tags--full">
+                  <li>Java 21</li>
+                  <li>Spring Boot</li>
+                  <li>Spring Security</li>
+                  <li>Spring Data JPA</li>
+                  <li>Thymeleaf</li>
+                  <li>PostgreSQL</li>
+                  <li>Hibernate</li>
+                </ul>
+                <p class="project-card__private">🔒 Repositório privado</p>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-card__header">
-              <h3>MF Manutenções</h3>
-              <span class="badge">Em desenvolvimento</span>
+          <article class="project-card" tabindex="0">
+            <div class="project-card__cover project-card__cover--contain">
+              <img src="images/mf-manutencoes-cover.jpg" alt="Identidade visual da MF Manutenções" loading="lazy" />
             </div>
-            <p class="project-card__desc">
-              Sistema web para a MF Manutenções, empresa especializada em manutenção de
-              máquinas para a indústria moveleira em Cuiabá e Várzea Grande (MT).
-              O cliente cadastra sua empresa e solicita serviços — manutenção preventiva
-              ou corretiva, esquadrejamento, manutenção de coleiro, visita técnica ou
-              instalação de máquinas — e acompanha tudo pela "Minha Área". Os pagamentos
-              são feitos via PIX, crédito, débito ou à vista com integração InfinitePay,
-              com notificação por e-mail após a confirmação e um painel administrativo
-              completo para gestão de pedidos, clientes e financeiro.
-            </p>
-            <ul class="project-card__tags">
-              <li>Java 21</li>
-              <li>Spring Boot</li>
-              <li>Spring Security</li>
-              <li>Spring Data JPA</li>
-              <li>Thymeleaf</li>
-              <li>PostgreSQL</li>
-              <li>InfinitePay</li>
-            </ul>
-            <div class="project-card__links">
-              <a href="https://github.com/Lcszera/mf-manutencoes" target="_blank" rel="noopener noreferrer">
-                Ver repositório →
-              </a>
+            <div class="project-card__main">
+              <div class="project-card__header">
+                <h3>MF Manutenções</h3>
+                <span class="badge badge--progress">Em desenvolvimento</span>
+              </div>
+              <p class="project-card__desc">
+                Sistema web para uma empresa de manutenção de máquinas da indústria
+                moveleira, com solicitação de serviços e pagamento online.
+              </p>
+              <ul class="project-card__tags">
+                <li>Java 21</li>
+                <li>Spring Boot</li>
+                <li>InfinitePay</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="project-card__details">
+              <div class="project-card__details-inner">
+                <p class="project-card__desc project-card__desc--full">
+                  Desenvolvido para a MF Manutenções (Cuiabá e Várzea Grande - MT).
+                  O cliente cadastra sua empresa e solicita serviços — manutenção
+                  preventiva/corretiva, esquadrejamento, manutenção de coleiro,
+                  visita técnica ou instalação de máquinas — e acompanha tudo pela
+                  "Minha Área". Pagamentos via PIX, crédito, débito ou à vista com
+                  integração InfinitePay, e notificação por e-mail após confirmação.
+                </p>
+                <ul class="project-card__features">
+                  <li>Cadastro de clientes (empresa/CNPJ)</li>
+                  <li>Login e autenticação</li>
+                  <li>Solicitação de serviço</li>
+                  <li>Pagamento via PIX / cartão (InfinitePay)</li>
+                  <li>Painel "Minha Área" com histórico</li>
+                  <li>Painel administrativo</li>
+                  <li>Notificação por e-mail</li>
+                  <li>Recuperação de senha</li>
+                </ul>
+                <ul class="project-card__tags project-card__tags--full">
+                  <li>Java 21</li>
+                  <li>Spring Boot</li>
+                  <li>Spring Security</li>
+                  <li>Spring Data JPA</li>
+                  <li>Thymeleaf</li>
+                  <li>PostgreSQL</li>
+                  <li>InfinitePay</li>
+                </ul>
+                <p class="project-card__private">🔒 Repositório privado</p>
+              </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -125,18 +184,18 @@
       <div class="container">
         <h2 class="section__title"><span>03.</span> Tecnologias</h2>
         <ul class="skills">
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Spring Data JPA</li>
-          <li>Spring Security</li>
-          <li>Hibernate</li>
-          <li>PostgreSQL</li>
-          <li>Thymeleaf</li>
-          <li>Maven</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Git &amp; GitHub</li>
+          <li><span>Java</span></li>
+          <li><span>Spring Boot</span></li>
+          <li><span>Spring Data JPA</span></li>
+          <li><span>Spring Security</span></li>
+          <li><span>Hibernate</span></li>
+          <li><span>PostgreSQL</span></li>
+          <li><span>Thymeleaf</span></li>
+          <li><span>Maven</span></li>
+          <li><span>HTML5</span></li>
+          <li><span>CSS3</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>Git &amp; GitHub</span></li>
         </ul>
       </div>
     </section>
@@ -151,7 +210,7 @@
         <div class="contact__links">
           <a href="https://github.com/Lcszera" target="_blank" rel="noopener noreferrer" class="btn btn--primary">GitHub</a>
           <a href="mailto:lucasmen2005@gmail.com" class="btn btn--ghost">E-mail</a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" title="Atualize com o link do seu LinkedIn">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/lucasmnzesdev" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
         </div>
       </div>
     </section>

@@ -12,8 +12,10 @@ Site estático, sem build step — pronto para deploy direto no [Vercel](https:/
 
 ## Projetos em destaque
 
-- **AB Barbearia System** — sistema web de gestão para uma barbearia (agendamento online, cadastro de clientes, painel administrativo, planos mensais e financeiro).
-- **MF Manutenções** — sistema web para uma empresa de manutenção de máquinas da indústria moveleira, com solicitação de serviços, pagamento via PIX/cartão (InfinitePay) e painel administrativo.
+- **AB Barbearia System** *(concluído)* — sistema web de gestão para uma barbearia (agendamento online, cadastro de clientes, painel administrativo, planos mensais e financeiro).
+- **MF Manutenções** *(em desenvolvimento)* — sistema web para uma empresa de manutenção de máquinas da indústria moveleira, com solicitação de serviços, pagamento via PIX/cartão (InfinitePay) e painel administrativo.
+
+Ambos os repositórios são privados, por isso o portfólio não linka diretamente para o código-fonte.
 
 ## Rodando localmente
 
