@@ -3,222 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Menezes Silva | Desenvolvedor Java &amp; Spring Boot</title>
-  <meta name="description" content="Portfólio de Lucas Menezes Silva, desenvolvedor Java / Spring Boot. Confira projetos como AB Barbearia System e MF Manutenções." />
+  <title>Lucas Menezes Silva | Desenvolvedor Java Backend</title>
+  <meta name="description" content="Lucas Menezes Silva, desenvolvedor Java backend em Maceió. Sistemas web com Java, Spring Boot e PostgreSQL. Aberto a vagas de Desenvolvedor Java Júnior." />
+  <meta name="theme-color" content="#0e0d0d" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Lucas Menezes Silva | Desenvolvedor Java Backend" />
+  <meta property="og:description" content="Sistemas web com Java, Spring Boot e PostgreSQL. Aberto a vagas de Desenvolvedor Java Júnior." />
+  <meta property="og:image" content="images/lucas.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
 
-  <div class="noise" aria-hidden="true"></div>
-
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a href="#top" class="logo">LMS<span>.</span></a>
-      <nav class="nav">
-        <a href="#sobre"><span class="nav__index">01.</span> Sobre</a>
-        <a href="#projetos"><span class="nav__index">02.</span> Projetos</a>
-        <a href="#skills"><span class="nav__index">03.</span> Skills</a>
-        <a href="#contato"><span class="nav__index">04.</span> Contato</a>
+  <header class="header">
+    <div class="wrap header__inner">
+      <a href="#topo" class="logo" aria-label="Início">LMS<span>.</span></a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#contato" class="nav__cta">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" id="topo">
       <div class="hero__glow" aria-hidden="true"></div>
-      <div class="container hero__inner">
-        <p class="hero__eyebrow">&lt; olá, eu sou /&gt;</p>
-        <h1 class="hero__title">Lucas Menezes<br />Silva</h1>
-        <p class="hero__subtitle">Desenvolvedor <span class="accent">Java</span> / Spring Boot</p>
-        <p class="hero__text">
-          Construo sistemas web completos com Java, Spring Boot e PostgreSQL —
-          do cadastro de clientes ao painel administrativo, do agendamento à cobrança.
-          Passa o cursor pelos projetos abaixo e vê os detalhes.
-        </p>
-        <div class="hero__cta">
-          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
-          <a href="#contato" class="btn btn--ghost">Falar comigo</a>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="status"><span class="status__dot"></span>Aberto a vagas de Desenvolvedor Java Júnior</p>
+          <h1 class="hero__name">
+            <span class="line"><span>Lucas</span></span>
+            <span class="line"><span>Menezes</span></span>
+            <span class="line"><span>Silva<em>.</em></span></span>
+          </h1>
+          <p class="hero__role">Desenvolvedor Java backend</p>
+          <p class="hero__text">
+            Construo sistemas web com Java, Spring Boot e PostgreSQL, da autenticação
+            ao painel administrativo. Curso o 8º período de Engenharia da Computação
+            na UMJ e estagio em TI na SEPLAG, em Maceió.
+          </p>
+          <div class="hero__cta">
+            <a href="#projetos" class="btn btn--solid">Ver projetos</a>
+            <a href="curriculo-lucas-menezes.pdf" class="btn btn--line" download>Baixar currículo</a>
+          </div>
+        </div>
+
+        <figure class="hero__photo">
+          <img src="images/lucas.jpg" alt="Lucas Menezes Silva, de óculos e camiseta preta, com os braços cruzados" width="640" height="800" />
+        </figure>
+      </div>
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para a próxima seção"><span></span></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="wrap about">
+        <h2 class="title reveal">Sobre</h2>
+        <div class="about__body">
+          <p class="lead reveal">
+            Gosto de pegar o problema real de um negócio e transformar em sistema:
+            uma barbearia que precisava de agenda online, uma empresa de manutenção
+            industrial que queria receber por PIX, a clínica da faculdade que ninguém
+            sabia o horário.
+          </p>
+          <p class="reveal">
+            Meu foco é o backend com o ecossistema Spring: Spring Boot, Spring Data JPA,
+            Spring Security e Hibernate sobre PostgreSQL. No front, uso Thymeleaf, HTML,
+            CSS e JavaScript. No estágio da SEPLAG automatizo ferramentas do setor, testo
+            sistemas em homologação e monto fluxos de chatbot com Groq e Ollama.
+          </p>
+          <dl class="facts reveal">
+            <div><dt>Base</dt><dd>Maceió, AL</dd></div>
+            <div><dt>Formação</dt><dd>Eng. da Computação, 8º período</dd></div>
+            <div><dt>Idiomas</dt><dd>Português nativo, inglês intermediário</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2 class="section__title"><span>01.</span> Sobre mim</h2>
-        <p class="section__text">
-          Sou desenvolvedor focado no ecossistema Java, com Spring Boot, Spring Data JPA,
-          Spring Security, Hibernate e PostgreSQL como base do meu dia a dia — sempre
-          acompanhado de Thymeleaf, HTML, CSS e JavaScript no front-end. Gosto de pegar
-          um problema real de um negócio (uma barbearia, uma empresa de manutenção
-          industrial) e transformar em um sistema completo: autenticação, agendamentos,
-          pagamentos, painéis administrativos e controle financeiro.
-        </p>
+    <!-- EXPERIÊNCIA -->
+    <section class="section section--alt" id="experiencia">
+      <div class="wrap">
+        <h2 class="title reveal">Experiência</h2>
+        <ol class="timeline">
+          <li class="job reveal">
+            <p class="job__when">fev 2026 — atual</p>
+            <div>
+              <h3 class="job__role">Estagiário de TI</h3>
+              <p class="job__org">SEPLAG, Secretaria de Planejamento, Gestão e Patrimônio de Alagoas</p>
+              <ul class="job__list">
+                <li>Automatizei a ferramenta de trabalho usada no setor</li>
+                <li>Construo fluxos de chatbot com Groq e Ollama</li>
+                <li>Testo sistemas do setor em ambiente de homologação</li>
+                <li>Analiso e tramito processos de órgãos internos e externos</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <p class="job__when">ago — nov 2025</p>
+            <div>
+              <h3 class="job__role">Estagiário de TI</h3>
+              <p class="job__org">WPS Soluções em TI</p>
+              <ul class="job__list">
+                <li>Montagem, manutenção e formatação de computadores</li>
+                <li>Instalação e manutenção de redes</li>
+                <li>Suporte e atendimento ao cliente</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <p class="job__when">abr — jun 2025</p>
+            <div>
+              <h3 class="job__role">Desenvolvedor Android</h3>
+              <p class="job__org">Freelancer</p>
+              <ul class="job__list">
+                <li>Desenvolvimento e manutenção de aplicativos com Flutter</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <p class="job__when">fev — abr 2025</p>
+            <div>
+              <h3 class="job__role">Monitor do curso de Web Design</h3>
+              <p class="job__org">Amigos do Bem e SENAC</p>
+              <ul class="job__list">
+                <li>Apoio aos alunos nas tarefas de desenvolvimento web</li>
+                <li>Montagem e suporte de hardware do laboratório</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section id="projetos" class="section section--alt">
-      <div class="container">
-        <h2 class="section__title"><span>02.</span> Projetos em destaque</h2>
-        <p class="section__hint">passe o cursor (ou toque) em cada card para expandir</p>
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="wrap">
+        <h2 class="title reveal">Projetos</h2>
+        <p class="section__intro reveal">Sistemas feitos para clientes e para a comunidade. Clique em um projeto para ver o que ele faz.</p>
 
         <div class="projects">
 
-          <article class="project-card" tabindex="0">
-            <div class="project-card__cover">
-              <img src="images/ab-barbearia-cover.jpeg" alt="Identidade visual do AB Barbearia System" loading="lazy" />
+          <article class="project reveal">
+            <div class="project__media project__media--ab">
+              <img src="images/ab-barbearia-cover.jpeg" alt="Logo da AB Barbearia" loading="lazy" />
             </div>
-            <div class="project-card__main">
-              <div class="project-card__header">
-                <h3>AB Barbearia System</h3>
-                <span class="badge badge--done">Concluído</span>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag tag--done">Concluído</span>
+                <span class="project__kind">Sistema web para cliente</span>
               </div>
-              <p class="project-card__desc">
-                Sistema web completo para gestão de uma barbearia: agendamento online,
-                cadastro de clientes e painel administrativo.
+              <h3 class="project__name">AB Barbearia System</h3>
+              <p class="project__desc">
+                Gestão completa de uma barbearia: o cliente se cadastra e agenda online,
+                o dono controla equipe, planos mensais, serviços e financeiro em um painel.
               </p>
-              <ul class="project-card__tags">
-                <li>Java 21</li>
-                <li>Spring Boot</li>
-                <li>Spring Security</li>
-                <li>PostgreSQL</li>
+              <ul class="chips">
+                <li>Java 21</li><li>Spring Boot</li><li>Spring Security</li><li>Spring Data JPA</li><li>Thymeleaf</li><li>PostgreSQL</li>
               </ul>
-            </div>
-
-            <div class="project-card__details">
-              <div class="project-card__details-inner">
-                <p class="project-card__desc project-card__desc--full">
-                  Clientes se cadastram, fazem login e agendam serviços online. O
-                  administrador controla funcionários, planos mensais, serviços
-                  oferecidos, financeiro, galeria de fotos e equipe — tudo em um
-                  painel dedicado, com recuperação de senha e autenticação segura.
-                </p>
-                <ul class="project-card__features">
-                  <li>Cadastro de clientes</li>
-                  <li>Login e autenticação</li>
-                  <li>Agendamento online</li>
-                  <li>Gerenciamento de funcionários</li>
-                  <li>Planos mensais</li>
-                  <li>Controle de serviços</li>
-                  <li>Painel administrativo</li>
-                  <li>Controle financeiro</li>
-                  <li>Galeria e equipe</li>
-                  <li>Recuperação de senha</li>
-                </ul>
-                <ul class="project-card__tags project-card__tags--full">
-                  <li>Java 21</li>
-                  <li>Spring Boot</li>
-                  <li>Spring Security</li>
-                  <li>Spring Data JPA</li>
-                  <li>Thymeleaf</li>
-                  <li>PostgreSQL</li>
-                  <li>Hibernate</li>
-                </ul>
-                <p class="project-card__private">🔒 Repositório privado</p>
+              <button class="project__toggle" aria-expanded="false" aria-controls="det-ab">Ver detalhes</button>
+              <div class="project__details" id="det-ab">
+                <div>
+                  <ul class="feature-list">
+                    <li>Cadastro, login e recuperação de senha</li>
+                    <li>Agendamento online de serviços</li>
+                    <li>Gestão de funcionários e equipe</li>
+                    <li>Planos mensais de assinatura</li>
+                    <li>Controle financeiro</li>
+                    <li>Galeria de fotos gerenciável</li>
+                  </ul>
+                  <p class="project__note">Código em repositório privado do cliente.</p>
+                </div>
               </div>
             </div>
           </article>
 
-          <article class="project-card" tabindex="0">
-            <div class="project-card__cover project-card__cover--contain">
-              <img src="images/mf-manutencoes-cover.jpg" alt="Identidade visual da MF Manutenções" loading="lazy" />
+          <article class="project project--flip reveal">
+            <div class="project__media">
+              <img src="images/maceio-vital-cover.jpg" alt="Tela de compartilhamento do Maceió Vital: as 8 UPAs de Maceió e a agenda da Clínica Odontológica UMJ" loading="lazy" />
             </div>
-            <div class="project-card__main">
-              <div class="project-card__header">
-                <h3>MF Manutenções</h3>
-                <span class="badge badge--progress">Em desenvolvimento</span>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag tag--live">No ar</span>
+                <span class="project__kind">Projeto de extensão UMJ, como CEO e dev</span>
               </div>
-              <p class="project-card__desc">
-                Sistema web para uma empresa de manutenção de máquinas da indústria
-                moveleira, com solicitação de serviços e pagamento online.
+              <h3 class="project__name">Maceió Vital</h3>
+              <p class="project__desc">
+                Portal que mostra onde ficam as 8 UPAs e os postos de saúde de Maceió e
+                a agenda da Clínica Odontológica da UMJ. Lidero uma equipe de seis pessoas.
               </p>
-              <ul class="project-card__tags">
-                <li>Java 21</li>
-                <li>Spring Boot</li>
-                <li>InfinitePay</li>
-                <li>PostgreSQL</li>
+              <ul class="chips">
+                <li>JavaScript</li><li>PHP</li><li>HTML</li><li>CSS</li><li>Acessibilidade</li>
               </ul>
-            </div>
-
-            <div class="project-card__details">
-              <div class="project-card__details-inner">
-                <p class="project-card__desc project-card__desc--full">
-                  Desenvolvido para a MF Manutenções (Cuiabá e Várzea Grande - MT).
-                  O cliente cadastra sua empresa e solicita serviços — manutenção
-                  preventiva/corretiva, esquadrejamento, manutenção de coleiro,
-                  visita técnica ou instalação de máquinas — e acompanha tudo pela
-                  "Minha Área". Pagamentos via PIX, crédito, débito ou à vista com
-                  integração InfinitePay, e notificação por e-mail após confirmação.
-                </p>
-                <ul class="project-card__features">
-                  <li>Cadastro de clientes (empresa/CNPJ)</li>
-                  <li>Login e autenticação</li>
-                  <li>Solicitação de serviço</li>
-                  <li>Pagamento via PIX / cartão (InfinitePay)</li>
-                  <li>Painel "Minha Área" com histórico</li>
-                  <li>Painel administrativo</li>
-                  <li>Notificação por e-mail</li>
-                  <li>Recuperação de senha</li>
-                </ul>
-                <ul class="project-card__tags project-card__tags--full">
-                  <li>Java 21</li>
-                  <li>Spring Boot</li>
-                  <li>Spring Security</li>
-                  <li>Spring Data JPA</li>
-                  <li>Thymeleaf</li>
-                  <li>PostgreSQL</li>
-                  <li>InfinitePay</li>
-                </ul>
-                <p class="project-card__private">🔒 Repositório privado</p>
+              <button class="project__toggle" aria-expanded="false" aria-controls="det-mv">Ver detalhes</button>
+              <div class="project__details" id="det-mv">
+                <div>
+                  <ul class="feature-list">
+                    <li>UPAs e UBS por bairro, com telefone e rota</li>
+                    <li>Orientação por sintomas: SAMU, UPA ou posto?</li>
+                    <li>Assistente de atendimento que roda no navegador</li>
+                    <li>Agenda, turnos e especialidades da clínica</li>
+                    <li>API em PHP de estatísticas anônimas</li>
+                    <li>Modo de alto contraste e ajuste de fonte</li>
+                  </ul>
+                  <a class="link" href="https://maceiovital.com.br" target="_blank" rel="noopener noreferrer">Abrir maceiovital.com.br</a>
+                </div>
               </div>
             </div>
           </article>
 
+          <article class="project reveal">
+            <div class="project__media project__media--mf">
+              <img src="images/mf-manutencoes-cover.jpg" alt="Logo da MF Manutenções" loading="lazy" />
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Pausado</span>
+                <span class="project__kind">Sistema web para cliente</span>
+              </div>
+              <h3 class="project__name">MF Manutenções</h3>
+              <p class="project__desc">
+                Sistema para uma empresa de manutenção de máquinas da indústria moveleira
+                em Cuiabá (MT): a empresa cliente solicita o serviço e paga online.
+              </p>
+              <ul class="chips">
+                <li>Java 21</li><li>Spring Boot</li><li>Spring Security</li><li>PostgreSQL</li><li>InfinitePay</li>
+              </ul>
+              <button class="project__toggle" aria-expanded="false" aria-controls="det-mf">Ver detalhes</button>
+              <div class="project__details" id="det-mf">
+                <div>
+                  <ul class="feature-list">
+                    <li>Cadastro de empresas por CNPJ</li>
+                    <li>Solicitação de manutenção, visita técnica e instalação</li>
+                    <li>Pagamento por PIX e cartão via InfinitePay</li>
+                    <li>Área do cliente com histórico de pedidos</li>
+                    <li>Aviso por e-mail após o pagamento</li>
+                    <li>Painel administrativo</li>
+                  </ul>
+                  <p class="project__note">Código em repositório privado.</p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
 
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section__title"><span>03.</span> Tecnologias</h2>
-        <ul class="skills">
-          <li><span>Java</span></li>
-          <li><span>Spring Boot</span></li>
-          <li><span>Spring Data JPA</span></li>
-          <li><span>Spring Security</span></li>
-          <li><span>Hibernate</span></li>
-          <li><span>PostgreSQL</span></li>
-          <li><span>Thymeleaf</span></li>
-          <li><span>Maven</span></li>
-          <li><span>HTML5</span></li>
-          <li><span>CSS3</span></li>
-          <li><span>JavaScript</span></li>
-          <li><span>Git &amp; GitHub</span></li>
+        <h3 class="subtitle reveal">Código aberto</h3>
+        <p class="section__intro reveal">Projetos em Java puro, com o código no GitHub.</p>
+        <ul class="repos">
+          <li class="repo reveal">
+            <a href="https://github.com/Lcszera/cravo-canela-manager" target="_blank" rel="noopener noreferrer">
+              <h4 class="repo__name">Cravo &amp; Canela Manager</h4>
+              <p class="repo__desc">Estoque, vendas e financeiro de uma loja, com camadas de DAO, service e interface.</p>
+              <p class="repo__stack">Java, Swing, SQLite e JDBC</p>
+            </a>
+          </li>
+          <li class="repo reveal">
+            <a href="https://github.com/Lcszera/controle-de-reparo" target="_blank" rel="noopener noreferrer">
+              <h4 class="repo__name">Controle de Reparo</h4>
+              <p class="repo__desc">Registro de consertos de eletrônicos com aviso de garantia vencida, feito para a oficina do meu pai.</p>
+              <p class="repo__stack">Java, Swing, SQLite e JDBC</p>
+            </a>
+          </li>
+          <li class="repo reveal">
+            <a href="https://github.com/Lcszera/consultorio-odontologico" target="_blank" rel="noopener noreferrer">
+              <h4 class="repo__name">Consultório Odontológico</h4>
+              <p class="repo__desc">Pacientes, consultas agendadas e financeiro de um consultório odontológico.</p>
+              <p class="repo__stack">Java, Swing, SQLite e JDBC</p>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section id="contato" class="section section--alt">
-      <div class="container contact">
-        <h2 class="section__title"><span>04.</span> Contato</h2>
-        <p class="section__text">
-          Tem um projeto em mente ou quer bater um papo sobre desenvolvimento?
-          Me chama em um dos canais abaixo.
-        </p>
-        <div class="contact__links">
-          <a href="https://github.com/Lcszera" target="_blank" rel="noopener noreferrer" class="btn btn--primary">GitHub</a>
-          <a href="mailto:lucasmen2005@gmail.com" class="btn btn--ghost">E-mail</a>
-          <a href="https://www.linkedin.com/in/lucasmnzesdev" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+    <!-- STACK -->
+    <section class="section section--alt" id="stack">
+      <div class="wrap">
+        <h2 class="title reveal">Stack</h2>
+        <div class="stack-wrap">
+        <div class="orbit" aria-hidden="true">
+          <div class="orbit__core">Java</div>
+          <div class="orbit__ring orbit__ring--1" data-items="Spring Boot,Spring Security,Spring Data JPA,Hibernate,Maven"></div>
+          <div class="orbit__ring orbit__ring--2" data-items="PostgreSQL,SQL,JDBC,Docker,Git,Linux,Thymeleaf"></div>
+          <div class="orbit__ring orbit__ring--3" data-items="JavaScript,TypeScript,HTML,CSS,Groq,Ollama,Flutter,SQLite,GitHub"></div>
         </div>
+        <div class="stack">
+          <div class="stack__group reveal">
+            <h3>Backend</h3>
+            <ul><li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate</li><li>Maven</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Dados</h3>
+            <ul><li>PostgreSQL</li><li>SQL</li><li>SQLite</li><li>JDBC</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Front-end</h3>
+            <ul><li>Thymeleaf</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li></ul>
+          </div>
+          <div class="stack__group reveal">
+            <h3>Ferramentas e IA</h3>
+            <ul><li>Git e GitHub</li><li>Docker</li><li>Linux</li><li>Groq</li><li>Ollama</li><li>Flutter</li></ul>
+          </div>
+        </div>
+        </div>
+
+        <div class="edu">
+          <div class="edu__col reveal">
+            <h3>Formação</h3>
+            <p><strong>Engenharia da Computação</strong><br />Centro Universitário Mário Pontes Jucá (UMJ), 8º período</p>
+            <p><strong>Bootcamp Java Full Stack</strong><br />DIO: Spring Boot, Hibernate, REST, Angular e Docker (em andamento)</p>
+          </div>
+          <div class="edu__col reveal">
+            <h3>Artigos</h3>
+            <p><strong>Avaliação de usabilidade do sistema e-SUS Território</strong><br />VII SITI, Maceió, 2025</p>
+            <p><strong>Avanços e desafios no diagnóstico assistido por IA</strong><br />VI SITI, Maceió, 2024 (coautor)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="wrap">
+        <h2 class="contact__title reveal">Bora conversar?</h2>
+        <p class="contact__text reveal">Estou procurando minha primeira vaga como desenvolvedor Java. Se tiver uma oportunidade ou um projeto, me chama.</p>
+        <a class="contact__mail reveal" href="mailto:lucasmen2005@gmail.com">lucasmen2005@gmail.com</a>
+        <div class="contact__links reveal">
+          <a href="https://www.linkedin.com/in/lucasmnzesdev" target="_blank" rel="noopener noreferrer" class="btn btn--solid">LinkedIn</a>
+          <a href="https://github.com/Lcszera" target="_blank" rel="noopener noreferrer" class="btn btn--line">GitHub</a>
+          <a href="curriculo-lucas-menezes.pdf" class="btn btn--line" download>Currículo em PDF</a>
+        </div>
+      </div>
+      <div class="signature" aria-hidden="true">
+        <span class="signature__dim">Lucas Menezes</span>
+        <span class="signature__lit">Lucas Menezes</span>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Lucas Menezes Silva. Feito com Java no coração e HTML/CSS/JS nas mãos.</p>
+    <div class="wrap footer__inner">
+      <p>© <span id="year"></span> Lucas Menezes Silva</p>
+      <a href="#topo">Voltar ao topo</a>
     </div>
   </footer>
 

@@ -10,12 +10,16 @@ Site pessoal com os projetos que venho desenvolvendo, focado em Java e Spring Bo
 
 Site estático, sem build step — pronto para deploy direto no [Vercel](https://vercel.com).
 
-## Projetos em destaque
+## Conteúdo
 
-- **AB Barbearia System** *(concluído)* — sistema web de gestão para uma barbearia (agendamento online, cadastro de clientes, painel administrativo, planos mensais e financeiro).
-- **MF Manutenções** *(em desenvolvimento)* — sistema web para uma empresa de manutenção de máquinas da indústria moveleira, com solicitação de serviços, pagamento via PIX/cartão (InfinitePay) e painel administrativo.
+- **Experiência**: SEPLAG-AL, WPS Soluções em TI, freelancer Android e monitoria no SENAC.
+- **Projetos**: AB Barbearia System (concluído), Maceió Vital (no ar, [maceiovital.com.br](https://maceiovital.com.br)) e MF Manutenções (pausado).
+- **Código aberto**: Cravo & Canela Manager, Controle de Reparo e Consultório Odontológico.
+- **Stack, formação e artigos**, além do currículo em PDF para download.
 
-Ambos os repositórios são privados, por isso o portfólio não linka diretamente para o código-fonte.
+## Animações
+
+Feitas em CSS e JavaScript puro, sem bibliotecas: entrada do hero, revelação ao rolar, linha do tempo desenhada pelo scroll, órbita da stack que gira com o scroll, cards de código aberto em leque, cursor personalizado e luz que segue o mouse no contato. Tudo respeita `prefers-reduced-motion` e o cursor só aparece em telas com mouse.
 
 ## Rodando localmente
 
