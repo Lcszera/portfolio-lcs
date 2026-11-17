@@ -1,5 +1,7 @@
 # Portfólio — Lucas Menezes Silva
 
+No ar em [portfolio-lcs-kappa.vercel.app](https://portfolio-lcs-kappa.vercel.app).
+
 Site pessoal com os projetos que venho desenvolvendo, focado em Java e Spring Boot.
 
 ## Tecnologias
